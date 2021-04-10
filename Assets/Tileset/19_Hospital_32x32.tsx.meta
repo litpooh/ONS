@@ -1,0 +1,25 @@
+fileFormatVersion: 2
+guid: 7587a525647c84fb5a47b4980d1a44c5
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: cc34d0f3dc257a442819830b408c5322, type: 3}
+  missingFiles: []
+  errors:
+  - Texture was imported at a smaller size. Make sure 'Max Size' on 'Modern_Interiors/1_Interiors/32x32/Theme_Sorter_32x32/19_Hospital_32x32.png'
+    is at least '2496'
+  warnings: []
+  missingSortingLayers: []
+  missingLayers: []
+  missingTags: []
+  importerVersion: 11
+  pixelsPerUnit: 100
+  edgesPerEllipse: 32
+  numberOfObjectsImported: 2
+  useSpriteAtlas: 1
+  atlasWidth: 2048
+  atlasHeight: 2048

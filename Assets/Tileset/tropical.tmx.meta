@@ -1,0 +1,48 @@
+fileFormatVersion: 2
+guid: 233f468e9d75a4f02a5ad9b3ff3fa34d
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 1fa25d03934ea624a82bf2fcee6f0873, type: 3}
+  missingFiles: []
+  errors:
+  - Errors detected in tileset '19_Hospital_32x32.tsx'. Check the tileset inspector
+    for more details. Your map may be broken until these are fixed.
+  - Could not find tile 1303. Make sure the tilesets were successfully imported.
+  - Could not find tile 1185. Make sure the tilesets were successfully imported.
+  - Could not find tile 1319. Make sure the tilesets were successfully imported.
+  - Could not find tile 1201. Make sure the tilesets were successfully imported.
+  - Could not find tile 1335. Make sure the tilesets were successfully imported.
+  - Could not find tile 1217. Make sure the tilesets were successfully imported.
+  - Could not find tile 1081. Make sure the tilesets were successfully imported.
+  - Could not find tile 1085. Make sure the tilesets were successfully imported.
+  - Could not find tile 1275. Make sure the tilesets were successfully imported.
+  - Could not find tile 1097. Make sure the tilesets were successfully imported.
+  - Could not find tile 1099. Make sure the tilesets were successfully imported.
+  - Could not find tile 1100. Make sure the tilesets were successfully imported.
+  - Could not find tile 1101. Make sure the tilesets were successfully imported.
+  - Could not find tile 1291. Make sure the tilesets were successfully imported.
+  - Could not find tile 1114. Make sure the tilesets were successfully imported.
+  - Could not find tile 1115. Make sure the tilesets were successfully imported.
+  - Could not find tile 1116. Make sure the tilesets were successfully imported.
+  - Could not find tile 1117. Make sure the tilesets were successfully imported.
+  - Could not find tile 1295. Make sure the tilesets were successfully imported.
+  - Could not find tile 1277. Make sure the tilesets were successfully imported.
+  - Could not find tile 1293. Make sure the tilesets were successfully imported.
+  warnings: []
+  missingSortingLayers: []
+  missingLayers: []
+  missingTags: []
+  importerVersion: 22
+  pixelsPerUnit: 100
+  edgesPerEllipse: 32
+  numberOfObjectsImported: 2
+  tilesAsObjects: 0
+  sortingMode: 0
+  isIsometric: 0
+  customImporterClassName: 
+  internalTilesets: []
