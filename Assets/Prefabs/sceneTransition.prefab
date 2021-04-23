@@ -45,6 +45,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetScene: 
+  playerPosition: {x: 0, y: 0}
+  playerStorage: {fileID: 11400000, guid: 9fb53be1c5036424eb1425b7aa077599, type: 2}
+  fadeIn: {fileID: 6161908672800109613, guid: e6ee4069f53da4fca949437fcf13e9a4, type: 3}
 --- !u!61 &3972214430353897142
 BoxCollider2D:
   m_ObjectHideFlags: 0

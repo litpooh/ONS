@@ -6,10 +6,12 @@ public class cameraMovement : MonoBehaviour
 {
     public Transform target;
     public float smoothing;
+    public Animator animator;
+   // public FloatValue currentStat;
     // Start is called before the first frame update
     void Start()
     {
-        
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -20,4 +22,9 @@ public class cameraMovement : MonoBehaviour
             transform.position = Vector3.Lerp(transform.position, targetPosition, smoothing);
         }
     }
+
+   /* public void updateSanityForCamera(){
+        int roundedUp = (int) currentStat.runtimeValue;
+        animator.SetInteger("sanity", roundedUp);
+    }*/
 }

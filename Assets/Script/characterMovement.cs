@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using PixelCrushers.DialogueSystem;
 
 public class characterMovement : MonoBehaviour
 {
@@ -9,11 +10,19 @@ public class characterMovement : MonoBehaviour
     private Rigidbody2D myRigidBody; 
     private Vector3 change;
     private Animator animator;
+    public FloatValue currentHealth;
+    public FloatValue currentSanity;
+    public FloatValue currentMoney;
+    public Signal healthSignal;
+    public Signal sanitySignal;
+    public Signal moneySignal;
+    public VectorValue startingPosition;
 
     void Start()
     {
         myRigidBody = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        transform.position = startingPosition.initValue;
     }
 
     // Update is called once per frame
@@ -37,8 +46,58 @@ public class characterMovement : MonoBehaviour
     }
 
     void MoveCharacter(){
+        change.Normalize();
         myRigidBody.MovePosition(
             transform.position + change * speed * Time.deltaTime
         );
+    }
+
+    public bool sanityFull(){
+        return (currentSanity.runtimeValue == 100);
+    }
+
+    public bool healthFull(){
+        return (currentHealth.runtimeValue == 100);
+    }
+
+    void changeHealth(double healthChange){
+        if (currentHealth.runtimeValue < currentHealth.initValue || healthChange < 0){
+            currentHealth.runtimeValue += (float) healthChange;
+            healthSignal.Raise();
+        }
+    }
+
+    void changeSanity(double sanityChange){
+        if (currentSanity.runtimeValue < currentSanity.initValue || sanityChange < 0){
+            currentSanity.runtimeValue += (float) sanityChange;
+            sanitySignal.Raise();
+        }
+    }
+
+    void changeMoney(double moneyChange){
+        if (currentMoney.runtimeValue < currentMoney.initValue || moneyChange < 0){
+            currentMoney.runtimeValue += (float) moneyChange;
+            moneySignal.Raise();
+        }
+    }
+
+    void OnEnable()
+    {
+        // Make the functions available to Lua: (Replace these lines with your own.)
+        Lua.RegisterFunction("sanityFull", this, SymbolExtensions.GetMethodInfo(() => sanityFull()));
+        Lua.RegisterFunction("healthFull", this, SymbolExtensions.GetMethodInfo(() => healthFull()));
+        Lua.RegisterFunction("changeHealth", this, SymbolExtensions.GetMethodInfo(() => changeHealth((double)0)));
+        Lua.RegisterFunction("changeMoney", this, SymbolExtensions.GetMethodInfo(() => changeMoney((double)0)));
+        Lua.RegisterFunction("changeSanity", this, SymbolExtensions.GetMethodInfo(() => changeSanity((double)0)));
+    }
+
+    void OnDisable()
+    {
+            // Remove the functions from Lua: (Replace these lines with your own.)
+            Lua.UnregisterFunction("sanityFull");
+            Lua.UnregisterFunction("healthFull");
+            Lua.UnregisterFunction("changeHealth");
+            Lua.UnregisterFunction("changeMoney");
+            Lua.UnregisterFunction("changeSanity");
     }
 }

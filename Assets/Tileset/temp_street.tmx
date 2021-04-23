@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.5" tiledversion="1.5.0" orientation="orthogonal" renderorder="right-down" width="10" height="20" tilewidth="32" tileheight="32" infinite="0" nextlayerid="3" nextobjectid="1">
+<map version="1.5" tiledversion="1.5.0" orientation="orthogonal" renderorder="right-down" width="10" height="20" tilewidth="32" tileheight="32" infinite="0" nextlayerid="4" nextobjectid="9">
  <tileset firstgid="1" source="CHIP1_B.tsx"/>
  <tileset firstgid="257" source="Tileset_32x32_14.tsx"/>
  <tileset firstgid="387" source="CHIP1_A5.tsx"/>
@@ -51,4 +51,14 @@
 0,277,368,368,368,368,368,369,279,0
 </data>
  </layer>
+ <objectgroup id="3" name="collusion">
+  <object id="1" x="32.9845" y="127.94" width="253.881" height="94.9555"/>
+  <object id="2" x="51.9756" y="605.716" width="212.9" height="31.985"/>
+  <object id="3" x="257.879" y="513.759" width="64.9695" height="125.941"/>
+  <object id="4" x="256.88" y="259.878" width="61.971" height="133.937"/>
+  <object id="5" x="-1.99906" y="254.881" width="62.9705" height="139.934"/>
+  <object id="6" x="1.99906" y="514.759" width="61.971" height="125.941"/>
+  <object id="7" x="34.9836" y="218.897" width="22.9892" height="38.9817"/>
+  <object id="8" x="257.879" y="221.896" width="24.9883" height="34.9836"/>
+ </objectgroup>
 </map>
