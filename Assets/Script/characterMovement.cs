@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using PixelCrushers.DialogueSystem;
+using UnityEngine.SceneManagement;
 
 public class characterMovement : MonoBehaviour
 {
@@ -64,6 +65,9 @@ public class characterMovement : MonoBehaviour
         if (currentHealth.runtimeValue < currentHealth.initValue || healthChange < 0){
             currentHealth.runtimeValue += (float) healthChange;
             healthSignal.Raise();
+            if (currentHealth.runtimeValue < 0){
+                SceneManager.LoadScene("Gameover");
+            }
         }
     }
 
@@ -71,14 +75,18 @@ public class characterMovement : MonoBehaviour
         if (currentSanity.runtimeValue < currentSanity.initValue || sanityChange < 0){
             currentSanity.runtimeValue += (float) sanityChange;
             sanitySignal.Raise();
+            if (currentSanity.runtimeValue <= 0){
+                SceneManager.LoadScene("Gameover");
+            }
         }
     }
 
     void changeMoney(double moneyChange){
-        if (currentMoney.runtimeValue < currentMoney.initValue || moneyChange < 0){
             currentMoney.runtimeValue += (float) moneyChange;
             moneySignal.Raise();
-        }
+            if (currentMoney.runtimeValue <= 0){
+                SceneManager.LoadScene("Gameover");
+            }
     }
 
     void OnEnable()
