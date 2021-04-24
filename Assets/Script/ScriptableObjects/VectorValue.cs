@@ -11,4 +11,8 @@ public class VectorValue : ScriptableObject, ISerializationCallbackReceiver
     public void OnAfterDeserialize(){ initValue = defaultValue; }
 
     public void OnBeforeSerialize(){}
+
+    public void resetVectorValue(){
+        initValue = defaultValue;
+    }
 }
