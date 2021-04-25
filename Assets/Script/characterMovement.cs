@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class characterMovement : MonoBehaviour
 {
     // Start is called before the first frame update
-    public float speed;
+    public static float speed = 10;
     private Rigidbody2D myRigidBody; 
     private Vector3 change;
     private Animator animator;
