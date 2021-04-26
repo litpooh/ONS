@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class characterMovement : MonoBehaviour
 {
     // Start is called before the first frame update
-    public float speed;
+    public static float speed = 10;
     private Rigidbody2D myRigidBody; 
     private Vector3 change;
     private Animator animator;
@@ -17,7 +17,9 @@ public class characterMovement : MonoBehaviour
     public Signal healthSignal;
     public Signal sanitySignal;
     public Signal moneySignal;
+    public Signal phoneSignal;
     public VectorValue startingPosition;
+    public CustomArrayList phoneList;
 
     void Start()
     {
@@ -89,6 +91,12 @@ public class characterMovement : MonoBehaviour
             }
     }
 
+    void NewContactToPhone(string character)
+    {
+        phoneList.arList.Add(character);
+        phoneSignal.Raise();
+    }
+
     void OnEnable()
     {
         // Make the functions available to Lua: (Replace these lines with your own.)
@@ -97,6 +105,7 @@ public class characterMovement : MonoBehaviour
         Lua.RegisterFunction("changeHealth", this, SymbolExtensions.GetMethodInfo(() => changeHealth((double)0)));
         Lua.RegisterFunction("changeMoney", this, SymbolExtensions.GetMethodInfo(() => changeMoney((double)0)));
         Lua.RegisterFunction("changeSanity", this, SymbolExtensions.GetMethodInfo(() => changeSanity((double)0)));
+        Lua.RegisterFunction("NewContactToPhone", this, SymbolExtensions.GetMethodInfo(() => NewContactToPhone("")));
     }
 
     void OnDisable()

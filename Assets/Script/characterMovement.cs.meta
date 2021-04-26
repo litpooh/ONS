@@ -3,7 +3,16 @@ guid: bd20d2c287115488cb0dff67e13f4608
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - currentHealth: {instanceID: 0}
+  - currentSanity: {instanceID: 0}
+  - currentMoney: {instanceID: 0}
+  - healthSignal: {fileID: 11400000, guid: 9e90429f9ab944115bec1dc77cb75d79, type: 2}
+  - sanitySignal: {fileID: 11400000, guid: 5af7407a5a9484346a8a7c91d36661a2, type: 2}
+  - moneySignal: {fileID: 11400000, guid: 478a56858d3824add9330472700e742a, type: 2}
+  - phoneSignal: {fileID: 11400000, guid: 795df257bca5c2d44a6db87b40292226, type: 2}
+  - startingPosition: {fileID: 11400000, guid: 9fb53be1c5036424eb1425b7aa077599, type: 2}
+  - phoneList: {fileID: 11400000, guid: c6ae99eafadf1f14583dd165b9c42f48, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
