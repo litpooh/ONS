@@ -7,7 +7,7 @@ public class cameraMovement : MonoBehaviour
     public Transform target;
     public float smoothing;
     public Animator animator;
-   // public FloatValue currentStat;
+    public FloatValue currentStat;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,8 +23,12 @@ public class cameraMovement : MonoBehaviour
         }
     }
 
-   /* public void updateSanityForCamera(){
-        int roundedUp = (int) currentStat.runtimeValue;
-        animator.SetInteger("sanity", roundedUp);
+   /*public void updateSanityForCamera(){
+        if (currentStat < 60){
+            animator.SetBool("drunk", true);
+        }
+        if (currentStat >= 60){
+            animator.SetBool("drunk", false);
+        }
     }*/
 }

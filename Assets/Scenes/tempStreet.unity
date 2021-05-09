@@ -621,6 +621,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 9fb53be1c5036424eb1425b7aa077599,
         type: 2}
+    - target: {fileID: 7508930037160179234, guid: 3a5186e60dc9e4fc78b94208947e6388,
+        type: 3}
+      propertyPath: playerPosition.x
+      value: 0.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 7508930037160179234, guid: 3a5186e60dc9e4fc78b94208947e6388,
+        type: 3}
+      propertyPath: playerPosition.y
+      value: -0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 8565469973342159948, guid: 3a5186e60dc9e4fc78b94208947e6388,
         type: 3}
       propertyPath: m_RootOrder

@@ -274,7 +274,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: You have 0 contacts.
+  m_Text: "You   haven't gotten \nall contacts, try   again"
 --- !u!222 &988649428
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -732,7 +732,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_FirstSelected: {fileID: 0}
+  m_FirstSelected: {fileID: 1893145119}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
 --- !u!4 &2112746180

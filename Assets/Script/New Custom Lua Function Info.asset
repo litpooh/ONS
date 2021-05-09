@@ -19,6 +19,9 @@ MonoBehaviour:
   - functionName: healthFull
     parameters: 
     returnValue: 1
+  - functionName: moneyAmount
+    parameters: 
+    returnValue: 2
   scriptFunctions:
   - functionName: changeMoney
     parameters: 01000000

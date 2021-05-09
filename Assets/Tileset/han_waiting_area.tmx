@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.5" tiledversion="1.5.0" orientation="orthogonal" renderorder="right-down" width="10" height="10" tilewidth="32" tileheight="32" infinite="0" nextlayerid="6" nextobjectid="8">
+ <tileset firstgid="1" source="CHIP1_B.tsx"/>
+ <tileset firstgid="257" source="Tileset_32x32_11.tsx"/>
+ <tileset firstgid="357" source="1_Generic_32x32.tsx"/>
+ <tileset firstgid="1317" source="12_Kitchen_32x32.tsx"/>
+ <layer id="1" name="Tile Layer 1" width="10" height="10">
+  <data encoding="csv">
+1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1
+</data>
+ </layer>
+ <layer id="2" name="Tile Layer 2" width="10" height="10">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,
+0,267,368,370,371,370,371,368,270,0,
+0,297,384,386,387,386,387,384,290,0,
+0,297,384,386,387,386,387,384,290,0,
+0,297,0,386,387,386,387,0,290,0,
+0,297,0,386,387,386,387,0,290,0,
+0,297,0,386,387,386,387,0,290,0,
+0,297,0,705,706,707,708,0,290,0,
+0,307,785,721,722,723,724,785,310,0,
+0,0,785,737,738,739,740,785,0,0
+</data>
+ </layer>
+ <layer id="3" name="Tile Layer 3" width="10" height="10">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,
+0,0,1357,0,0,0,0,1357,0,0,
+0,0,1357,0,0,0,0,1357,0,0,
+0,0,1357,0,0,0,0,1357,0,0,
+0,0,1357,0,0,0,0,1357,0,0,
+0,0,1357,0,0,0,0,1357,0,0,
+0,0,1357,0,0,0,0,1357,0,0,
+0,0,1357,0,0,0,0,1357,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="5" name="objectlayer">
+  <object id="1" x="-0.757576" y="0.757576" width="63.6364" height="319.697"/>
+  <object id="2" x="62.8788" y="0" width="206.061" height="31.0606"/>
+  <object id="4" x="253.788" y="-0.757576" width="65.1515" height="320.455"/>
+  <object id="5" x="63.6364" y="31.0606" width="31.0606" height="225"/>
+  <object id="6" x="224.242" y="34.0909" width="31.0606" height="223.485"/>
+  <object id="7" x="97.7273" y="35.6061" width="30.303" height="44.697"/>
+ </objectgroup>
+</map>

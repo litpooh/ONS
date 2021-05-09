@@ -2,12 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class phoneManager : MonoBehaviour
 {
     public Image Dan_icon, Lucy_icon, Samuel_icon, Molly_icon;
     public CustomArrayList characterList;
     public IDictionary<string, Image> iconDict = new Dictionary<string, Image>();
+    public int counter = 0;
 
     private void Start()
     {
@@ -33,6 +35,10 @@ public class phoneManager : MonoBehaviour
         foreach (string character in tempList)
         {
             iconDict[character].enabled = true;
+            counter++;
+        }
+        if (counter == 4){
+            SceneManager.LoadScene("congradulation");
         }
     }
 }

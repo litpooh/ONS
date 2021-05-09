@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5e9f558a14be4c11bf50593d561efeb, type: 3}
   m_Name: timerValue
   m_EditorClassIdentifier: 
-  initValue: 60
-  runtimeValue: 60
+  initValue: 300
+  runtimeValue: 300

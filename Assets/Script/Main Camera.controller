@@ -33,9 +33,9 @@ AnimatorStateTransition:
   m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 4
-    m_ConditionEvent: sanity
-    m_EventTreshold: 70
+  - m_ConditionMode: 1
+    m_ConditionEvent: drunk
+    m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -2331772651915713637}
   m_Solo: 0
@@ -86,10 +86,10 @@ AnimatorController:
   m_Name: Main Camera
   serializedVersion: 5
   m_AnimatorParameters:
-  - m_Name: sanity
-    m_Type: 3
+  - m_Name: drunk
+    m_Type: 4
     m_DefaultFloat: 0
-    m_DefaultInt: 100
+    m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
   m_AnimatorLayers:
@@ -140,9 +140,9 @@ AnimatorStateTransition:
   m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 3
-    m_ConditionEvent: sanity
-    m_EventTreshold: 70
+  - m_ConditionMode: 2
+    m_ConditionEvent: drunk
+    m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 5971170780591888935}
   m_Solo: 0
@@ -152,7 +152,7 @@ AnimatorStateTransition:
   m_TransitionDuration: 0
   m_TransitionOffset: 0
   m_ExitTime: 0
-  m_HasExitTime: 0
+  m_HasExitTime: 1
   m_HasFixedDuration: 0
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
