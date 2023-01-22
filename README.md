@@ -9,9 +9,11 @@ One night simulator is a 2D RPG game set in the nightlife district. Players get 
 
 The goal of the game is to collect specific contacts of specific targets. It is a 2G RPG game in a mature setting and the target audience of the game is the young adults demographic..
 
+
 ## Game Background
 
 Under current COVID-19 influenza, restriction order has prohibited parties and gatherings. Our game is inspired by this atmosphere and aimed to provide players an experience of local Hong Kong bar culture. We want to see if players can make contact with people in Lan Kwai Fong, and complete different missions that simulate common happenings in the nightlife district.
+
 
 
 ## Scope Of Project
@@ -23,7 +25,10 @@ Initially, the project is set with a greater scope in mind -- it was planned tha
 However, the learning time for different techniques were underestimated. The randomised feature has too many parameters to be considered in order for it to fully function. For now, we have implemented the basic stream-line mechanics of the RPG games. Each decision made will affect the three values we set up, including health, sanity and money, and that the dialogue systems plug-in utilised would work with the stat changes across scenes. A timer is set such that the player is limited to only a 5 minute playtime each run. Replay is encouraged for the player to get all the target’s contacts. Currently, there are 4 targets available, and getting the contacts depends heavily on the conversation decisions made. The clues to the next steps in the game are not as obvious so that there are still some explorations and novelty for the player. The ultimate aim of the game is to get as many contacts as possible within the time limit. 
 
 
+
 ## Coding Process
 
 Our group created a Github repository and edit the game as well as C# scripts respectively according to delegated parts. We held regular meetings to synchronize respective progress and coordinate different components together.
+
+
 
