@@ -2,6 +2,13 @@
 
 <img width="774" alt="Screenshot 2023-01-20 at 3 15 33 AM" src="https://user-images.githubusercontent.com/48947076/213538823-7e228108-5349-4ee2-bc0d-c55bbbcc7bda.png">
 
+The below sections are the brief description of our game, which is quoted from our report.
+To know more details about the game, please have a check on our complete report, game trailor, and powerpoint for presentation:
+
+- Report: https://drive.google.com/file/d/1-A11an7jRfDNfYxRkxfP5H_wTHrGq3qt/view?usp=share_link
+- Game Trailor: https://drive.google.com/file/d/1Dk83brhFq6JEJ7pGaBUYFOeSxhoV94Tz/view?usp=share_link
+- Game Intrsuctions: https://drive.google.com/file/d/1yLWkY6hUuW1IgroWKpYt24ggq_Gz1fil/view?usp=share_link
+- Powerpoint: https://drive.google.com/file/d/1RQrXAwE4NgkE9KFheP6ihWT7oeXViw6o/view?usp=share_link
 
 ## Overview
 
